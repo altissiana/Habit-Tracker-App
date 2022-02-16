@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { Seo } from '../components/seo';
 
-export default function AddPage() {
+import Layout from '../components/layout';
+import { GlobalStyle } from '../utils/Global';
+import Habits from '../components/Habits';
+
+const AddPage = () => {
   return (
-    <>
-      <Seo 
-        title="Add new Habit"
-        description="Here is where you start to improving your life by adding new habits."
-      />
-      <main>
-        <h1>Add New Habit</h1>
-        <Link to="/">Cancel</Link>
-      </main>
-    </>
-  )
+    <Layout
+      title="Add New Habit"
+      description="Here is where you start to improving your life by adding new habits.">
+      <Habits/>
+    <GlobalStyle />
+    </Layout>
+  );
 }
+
+export default AddPage;

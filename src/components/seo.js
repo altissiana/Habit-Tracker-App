@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-export function Seo(props) {
+export default function Seo(props) {
   const data = useStaticQuery(graphql`
-    query GetMetadata {
+    query GetAppMetadata {
       site {
         siteMetadata {
           description
@@ -20,15 +20,13 @@ export function Seo(props) {
   const title = props.title || defaults.title;
   const description = props.description || defaults.description;
   const image = new URL(props.image || defaults.image, defaults.siteUrl);
-  const url = new URL(props.path || '/', defaults.siteUrl);
+  const path = new URL(props.path || '/', defaults.siteUrl);
 
   return(
     <Helmet>
-      //browser display
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      <meta name={title} content={description} />
+      <link rel="canonical" href={path} />
       {image && <meta name="image" content={image} />}
     </Helmet>
-  )
+  );
 }
