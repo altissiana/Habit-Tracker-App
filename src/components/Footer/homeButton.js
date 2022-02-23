@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colorPalette } from "../../utils";
 
 const HomeButtonStyle = styled.svg`
-  stroke: #000000;
+  stroke: ${colorPalette.midnightGreen};
   cursor: pointer;
   height: 34px;
   width: 34px;

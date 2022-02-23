@@ -10,7 +10,7 @@ const AddButtonStyle = styled.svg`
 const AddButton = props => (
   <AddButtonStyle>
     <svg width="58" height="58" viewBox="0 0 58 58" fill="none">
-      <circle cx="29" cy="29" r="29" fill="#000000" box-shadow="1px 3px 20px -4px #aaa"/>
+      <circle cx="29" cy="29" r="29" fill="#073B4C" box-shadow="1px 3px 20px -4px #aaa"/>
       <path d="M31.8144 31.7469H40.5801V26.2684H31.8144V16.9872H26.1855V26.2684H17.4199V31.7469H26.1855V41.1356H31.8144V31.7469Z" fill="white"/>
     </svg>
   </AddButtonStyle>

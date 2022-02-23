@@ -7,7 +7,7 @@ import Seo from './seo';
 import Footer from './Footer';
 import Settings from "../components/Nav/settingsButton";
 import Slider from "../components/Nav/sliderButton";
-import { typeScale } from '../utils';
+import { colorPalette, typeScale, primaryFont, secondaryFont } from '../utils';
 
 const Main = styled.div`
   height: 70vh;
@@ -16,6 +16,9 @@ const Main = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins';
+  font-size: ${typeScale.paragraph};
+  color: ${colorPalette.midnightGreen};
 `;
 
 const NavContainer = styled.div`
@@ -29,10 +32,11 @@ const NavContainer = styled.div`
   grid-template-rows: 1fr;
   padding: 30px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: ${colorPalette.midnightGreen};
   .headerTitle {
-    font-family: 'Poppins';
-    font-size: ${typeScale.paragraph};
+    font-family: ${secondaryFont};
+    font-size: ${typeScale.header1};
+    color: ${colorPalette.midnightGreen};
     line-height: 20px;
     justify-self: center;
     grid-column: 2;
@@ -40,6 +44,14 @@ const NavContainer = styled.div`
   .cancelButton {
     grid-column: 3;
     justify-self: end;
+    text-decoration: none;
+    font-family: ${primaryFont};
+    font-size: ${typeScale.paragraph};
+    color: ${colorPalette.pink};
+    &:hover,
+    &:active {
+      color: ${colorPalette.midnightGreen};
+    }
   }
 `;
 

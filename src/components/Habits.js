@@ -31,7 +31,6 @@ const HabitView = styled.div`
 `;
 
 const HabitCard = styled.div`
-  -webkit-tap-highlight-color: transparent;
   border: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   height: 93px;
@@ -49,7 +48,7 @@ const HabitCard = styled.div`
   }
 `;
 
-const HabitTitle = styled.div`
+const HabitTitle = styled.svg`
   text-align: center;
   cursor: pointer;
   font-weight: 500;
@@ -59,7 +58,7 @@ const HabitTitle = styled.div`
   }
 `;
 
-const Habits = (props) => {
+const Habits = props => {
   const habitOptions = [
     Health, 
     Fitness, 

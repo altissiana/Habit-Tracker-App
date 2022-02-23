@@ -35,7 +35,6 @@ const ButtonContainer = styled(Link)`
 `;
 
 
-
 const Footer = () => (
   <FooterContainer>
     <ButtonContainer to="/"><Home/></ButtonContainer>

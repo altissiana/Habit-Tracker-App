@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%; width: 100%; margin: 0; 
     margin: 0;
     font-family: ${primaryFont};
-    background-color: #FFFFFF;
+    background-color: #f8f8ff;
     color: #25282B;
   }
 

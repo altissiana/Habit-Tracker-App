@@ -17,13 +17,6 @@ module.exports = {
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "images",
-      "path": "./src/images/"
-    },__key: "images"
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
       "name": "pages",
       "path": "./src/pages/"
     },__key: "pages"
@@ -32,7 +25,8 @@ module.exports = {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [
-        `Poppins\:500`
+        `Poppins`,
+        `SF Pro Display`
       ],
       display: 'swap'
     }
